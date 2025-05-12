@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Example</title>
+  <style>
+   
+   html, body {
+    height: 100%;
+  }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+   
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .box {
+        background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+</body>
+</html>
